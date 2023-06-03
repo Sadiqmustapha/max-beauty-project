@@ -1,0 +1,254 @@
+/**
+* !changing the default
+**/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgc: rgb(15, 21, 67);
+    --fc: rgb(188, 41, 178);
+    --secf: rgb(251, 253, 254);
+    --textc: rgb(12, 10, 10);
+    --secbgc: rgb(6, 3, 67);
+    --main-bgc: rgb(211, 209, 234);
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    background: var(--bgc);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+i{
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart a{
+    color: black;
+}
+/**
+* ! navbar section
+**/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: radial-gradient(var(--main-bgc), var(--secbgc), var(--bgc));
+    padding: 25px 60px;
+    color: white;
+    margin-bottom: 40px;
+    position: sticky;
+    top: -12px;
+    width: 100%;
+    box-shadow: 1px 2px 0  rgba(111, 45, 172, 0.723);
+    z-index: 1000;
+}
+
+.cart{
+    background-color: antiquewhite;
+    padding: 5px;
+    position: relative;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.bi-cart4{
+    color: #186fc5;
+}
+
+.cartAmount{
+    font-size: 16px;
+    background: repeating-linear-gradient(green, gray, gold, transparent);
+    position: absolute;
+    color: white;
+    top: -16px;
+    right: -10px;
+    font-size: 17px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/**
+*? shop items styles are here
+**/
+
+.shop{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 225px);
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 5px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.details h3{
+    color: var(--fc);
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', ;
+}
+.details p, h2{
+    color: azure;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 26px;
+    color: white;
+    font-weight: 600; 
+}
+span{
+    color: rgb(195, 9, 195);
+}
+.button{
+    display: flex;
+    gap: 6px;
+    font-weight: 800;
+}
+
+
+button:hover{
+    opacity: 0.9;
+}
+
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(2, 225px);
+    }
+}
+/**
+* ! media query section
+**/
+    
+@media only screen and (max-width: 500px) {
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(1, 225px);
+    }
+}
+
+
+/**
+*  ! style rules for label and some butttons
+**/
+
+.text-content{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.homebtn, .checkout, .removeAll{
+    background: #212529;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.checkout{
+    background: green;
+}
+
+.removeAll{
+    background: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: 600;
+}
+
+
+/**
+* ? rules for cart
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1);
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/**
+* ? rules for cart items
+**/
+
+.cart-items{
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+
+.title-price{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
