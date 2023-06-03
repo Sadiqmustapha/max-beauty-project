@@ -3,24 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --bgc: rgb(15, 21, 67);
-    --fc: rgb(188, 41, 178);
-    --secf: rgb(251, 253, 254);
-    --textc: rgb(12, 10, 10);
-    --secbgc: rgb(6, 3, 67);
-    --main-bgc: rgb(211, 209, 234);
-}
 
 html{
-    background: var(--main-bgc);
+    background: rgb(63,94,251);
+    background: linear-gradient(34deg, rgba(63,94,251,1) 27%, rgba(173,184,191,0.5986394557823129) 100%);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 /* header */
 header{
-    background: var(--bgc);
     position: sticky;
     top: 0;
     z-index: 1111;
@@ -30,6 +22,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: rgb(63,94,251);
+background: linear-gradient(34deg, rgba(63,94,251,1) 39%, rgba(252,70,107,0.5986394557823129) 83%);
 }
 .sec-p1{
     padding: 20px;
@@ -51,7 +45,7 @@ i p{
     top: -10px;
     color: #e332df;
     right: -10px;
-    background: repeating-linear-gradient(green, gray, gold);
+    background: white;
     padding: 2px;
     border-radius: 2px;
 }
@@ -81,45 +75,9 @@ i{
 }
 
 span{
-    color: var(--fc);
+    color: blue;
 }
 
-/* search */
-
-.search-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-    position: sticky;
-    top: 60px;
-}
-
-.searchbar{
-    width: 100%;
-    height: 500px;
-    background: transparent;
-}
-
-.searchbar form{
-    width: 100%;
-    border: 1px solid rgb(14, 119, 165);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    box-shadow: 0 0 1rem rgb(14, 119, 165);
-}
-
-.searchbar form input{
-    border: 0;
-    outline: 0;
-    width: 100%;
-    padding: 8px 12px;
-    background: transparent;
-    text-transform: capitalize;
-    color: #e332df;
-}
 
 /* home page */
 
@@ -147,7 +105,7 @@ span{
 }
 
 .home-container .image img{
-    width: 50%;
+    width: 100%;
 }
 
 .home-container .home-box{
@@ -171,7 +129,8 @@ span{
 /* banner */
 
 .banner{
-    background: linear-gradient(50deg, transparent, pink, gray, purple, red, transparent);
+    background: rgb(63,216,251);
+background: linear-gradient(34deg, rgba(63,216,251,0.6482758620689655) 27%, rgba(87,209,238,1) 43%, rgba(173,184,191,0.5986394557823129) 100%);
     width: 100%;
     height: 100px;
     background-position: center;
@@ -291,9 +250,8 @@ span{
 /* news-letter */
 
 .news-letter{
-    background: linear-gradient(rgba(100, 189, 28, 0.264),
-     rgba(128, 128, 128, 0.108), rgba(42, 161, 165, 0.33)), 
-     url(img/lotion\ \(5\).webp);
+    background: rgb(63,216,251);
+background: linear-gradient(34deg, rgba(63,216,251,0.6482758620689655) 27%, rgba(87,209,238,1) 43%, rgba(173,184,191,0.5986394557823129) 100%);
      border-radius: 10px;
 }
 
@@ -368,7 +326,8 @@ span{
 
 .sec-banner{
     color: aliceblue;
-    background: linear-gradient(rgba(0, 0, 0, 0.385), rgba(165, 42, 42, 0.483), rgba(0, 128, 0, 0.549)), url(img/lotion\ \(3\).webp);
+    background: rgb(63,216,251);
+    background: linear-gradient(34deg, rgba(63,216,251,0.6482758620689655) 27%, rgba(87,209,238,1) 43%, rgba(173,184,191,0.5986394557823129) 100%);
 }
 
 .sec-banner h1{
@@ -377,8 +336,8 @@ span{
 } 
 /* product section */
 .pro{
-    background: linear-gradient( #ae07ae4d,  #b245b243,  #aa6aaa4b), 
-    url(img/lotion\ \(7\).webp);
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(29,162,253,0.6965517241379311) 73%, rgba(252,176,69,1) 100%);
     background-position: center;
     background-size: cover;
     margin-top: 20px;
@@ -427,7 +386,8 @@ span{
 /* footer */
 
 footer{
-    background: #1b021b;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(29,162,253,0.6965517241379311) 73%, rgba(252,176,69,1) 100%);
     padding: 10px 0;
 }
 
@@ -480,7 +440,7 @@ footer marquee{
 }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 850px) {
     .header-box{
         position: relative;
     }
