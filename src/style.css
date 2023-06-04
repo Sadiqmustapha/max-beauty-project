@@ -360,7 +360,8 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(29,162,253,0.6965
     margin-top: 20px;
     margin-left: 50px;
     border: 1px solid white;
-    background: #e332df;
+    background: background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(29,162,253,0.6965517241379311) 73%, rgba(252,176,69,1) 100%);;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
